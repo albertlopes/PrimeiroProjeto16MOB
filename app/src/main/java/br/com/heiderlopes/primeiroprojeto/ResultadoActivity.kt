@@ -62,6 +62,7 @@ class ResultadoActivity : AppCompatActivity() {
                 setImagem(R.drawable.obesidade)
                 tvIMCDescricao.text = getString(R.string.label_gordo)
             }
+            
             else -> {
                 tvIMC.setText(imc.format(0))
                 setImagem(R.drawable.obesidademorbida)
