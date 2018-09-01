@@ -4,22 +4,68 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ResultadoActivity">
+    tools:context=".ResultadoActivity"
+    tools:layout_editor_absoluteY="81dp">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvYour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="@string/label_titulo_resultado"
-        android:textSize="48sp"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="@+id/ivIMC"
+        app:layout_constraintStart_toEndOf="@+id/ivIMC"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvDeveloper"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
         android:text="@string/label_rodape"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="476dp" />
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ivIMC"
+        app:layout_constraintStart_toEndOf="@+id/ivIMC" />
+
+    <ImageView
+        android:id="@+id/ivIMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvYour"
+        tools:srcCompat="@drawable/obesidade" />
+
+    <TextView
+        android:id="@+id/tvIMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="142dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="142dp"
+        tools:text="20"
+        android:textSize="96sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivIMC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvYour" />
+
+    <TextView
+        android:id="@+id/vcIMCDescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="142dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="142dp"
+        android:text="Peso Ideal"
+        android:textSize="18sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/tvDeveloper"
+        app:layout_constraintEnd_toEndOf="@+id/tvIMC"
+        app:layout_constraintStart_toStartOf="@+id/tvIMC"
+        app:layout_constraintTop_toTopOf="@+id/tvIMC"
+        tools:text="Peso Ideal" />
 </android.support.constraint.ConstraintLayout>
