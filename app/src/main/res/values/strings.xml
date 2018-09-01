@@ -9,4 +9,10 @@
     <string name="botao_limpar">Clean</string>
     <string name="label_titulo_resultado">Your IMC is:</string>
     <string name="label_rodape">Developed by me</string>
+    <string name="label_magreza">Skinny</string>
+    <string name="label_magro">thin</string>
+    <string name="label_ideal">Ideal</string>
+    <string name="label_gordo">Fat</string>
+    <string name="label_sobre">Above weight</string>
+    <string name="label_obesidade">Obesity</string>
 </resources>
